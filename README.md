@@ -1,2 +1,2 @@
 # hugo-website
-Personal webiste
+Personal website
