@@ -1,0 +1,103 @@
+---
+title: "Test Post 3"
+author: "Daniyal Arif"
+date: 2021-09-04T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown"]
+subtitle: "Currency"
+summary: "Currency"
+---
+
+
+```{r setup, include=FALSE}
+library(tidyr)
+library(tidyverse)
+library(lubridate)
+library(plotly)
+library(DT)
+data <- read.csv("D:/NHH SEMESTER/SPRING 2020/DS Practice/Books/Foreign Exchange/currency_data.csv",header = TRUE)
+
+```
+
+
+```{r}
+Currency <- c("PKR","INR","BDT")
+data <- data %>% filter(Currency_Code %in% Currency)
+data[is.na(data)] <- 0
+``` 
+
+```{r}
+Remove <- c("198","199","200","201","202","203","204","130","131","132","133","134","135","136","62","63","64","65","66","67","68")
+All <- c(1:204)
+Keep <- setdiff(All,Remove)
+``` 
+
+```{r}
+data_long <- gather(data, Year,Exchange_Rate, X1953:X2020)
+data_long <- data_long %>% arrange(Currency_Code, desc(Year)) 
+data_long <- data_long[Keep,]
+``` 
+
+```{r}
+data_long$Year <- substr(data_long$Year,2,5)
+colnames(data_long) <- c("Currency","Year","Exchange Rate")
+data_long$Year <- as.Date(as.character(data_long$Year), format = "%Y")
+data_long$Currency <- as.character(data_long$Currency)
+data_long$Currency <- as.factor(data_long$Currency)
+datatable(data_long, filter = "top", 
+          options = list(pageLength = 5))
+``` 
+
+```{r}         
+as.character(unique(data_long$Currency)) # India, Bangladesh, Pakistan Currency performance against USD
+``` 
+
+```{r}
+as.character(max(data_long$Year)) #latest data point 2020
+``` 
+
+```{r}
+as.character(min(data_long$Year)) # earliest datapoint 1960
+``` 
+```{r}
+PKR <- data_long %>% filter(Currency == "PKR")
+max(PKR$`Exchange Rate`) # highest PKR exchange rate
+``` 
+
+```{r}
+min(PKR$`Exchange Rate`) # lowest PKR exchange rate
+``` 
+
+```{r}
+INR <- data_long %>% filter(Currency == "INR")
+max(INR$`Exchange Rate`) # highest INR exchange rate
+``` 
+
+```{r}
+min(INR$`Exchange Rate`) # lowest INR exchange rate
+``` 
+
+```{r}
+BDT <- data_long %>% filter(Currency == "BDT")
+max(BDT$`Exchange Rate`) # highest BDT exchange rate
+``` 
+
+```{r}
+min(BDT$`Exchange Rate`) # lowest BDT exchange rate
+``` 
+
+```{r}
+ap <- ggplot(data_long, aes(x=Year, y=`Exchange Rate`, color = Currency)) +
+    geom_line() + 
+    xlab("")+ 
+  geom_point()+
+  scale_x_date(date_breaks = "3 year",date_labels = "%Y")+ 
+  ylim(0, 160) + 
+  scale_y_continuous(breaks=c(0,25,50,75,100,125,150,175)) + 
+  theme_bw()+
+  ggtitle(label = "Currency versus USD Exchange Rate",
+          subtitle = "1960 - 2020")
+          
+ggplotly(ap)
+```          
+          
