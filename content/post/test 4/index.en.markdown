@@ -1,0 +1,19 @@
+---
+title: "Test Post 4"
+author: "Daniyal Arif"
+date: 2021-09-04T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown"]
+subtitle: "Post 4"
+summary: "Post 4"
+---
+
+
+
+```r
+1+1
+```
+
+```
+## [1] 2
+```
