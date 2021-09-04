@@ -1,0 +1,23 @@
+---
+title: Final
+author: Daniyal
+date: '2021-09-04'
+slug: final
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-09-04T15:44:05+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r}
+1+1
+```
+
