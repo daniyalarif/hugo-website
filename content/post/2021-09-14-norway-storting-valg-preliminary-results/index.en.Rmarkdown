@@ -47,7 +47,7 @@ library(dplyr) # for pipes
 
 2) Read excel file:
 
-  read_excel("...")
+|   read_excel("...")
 
 ```{r include=FALSE}
 Valg <- read_excel("D:/NHH SEMESTER/SPRING 2020/DS Practice/RMarkdown/Projects/Storting Valg/StortingValg_130921.xlsx")

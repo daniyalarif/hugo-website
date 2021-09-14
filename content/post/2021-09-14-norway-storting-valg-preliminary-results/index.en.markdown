@@ -48,7 +48,7 @@ library(dplyr) # for pipes
 
 2) Read excel file:
 
-read_excel("...")
+|   read_excel("...")
 
 
 <br>
