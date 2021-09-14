@@ -10,7 +10,7 @@ tags:
   - GGparliament
   - GGplot
 subtitle: 'Preliminary Results'
-summary: 'Norway Storting Valg (Preliminary Results)'
+summary: 'Preliminary Results'
 authors: []
 lastmod: '2021-09-14T12:00:34+02:00'
 featured: no
