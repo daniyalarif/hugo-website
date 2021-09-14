@@ -31,8 +31,7 @@ projects: []
 ***
 <br>
 <br>
-<br>
-<br>
+
 
 Loading Libraries
 
@@ -47,17 +46,13 @@ library(dplyr) # for pipes
 <br>
 <br>
 <br>
-<br>
+
 
 Read excel file:
 
 read_excel("...")
 
 
-<br>
-<br>
-<br>
-<br>
 
 Take data and transform for ggparliament
 
@@ -68,10 +63,7 @@ No_Valg <- parliament_data(election_data = Valg,
                     parl_rows = 4,
                     party_seats = Valg$seats)
 ```
-<br>
-<br>
-<br>
-<br>
+
 
 Plotting the data.
 
