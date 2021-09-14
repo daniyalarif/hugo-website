@@ -46,9 +46,14 @@ library(dplyr) # for pipes
 <br>
 <br>
 
-2) Read excel file:
+2) Read excel file
 
-|   read_excel("...")
+
+```r
+# read_excel("...")
+```
+
+  
 
 
 <br>
@@ -84,7 +89,7 @@ ggplot(No_Valg, aes(x, y, colour = party_long)) +
                         limits = No_Valg$party_long)
 ```
 
-<img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-4-1.png" width="6000" />
+<img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-5-1.png" width="6000" />
 <br>
 <br>
 
