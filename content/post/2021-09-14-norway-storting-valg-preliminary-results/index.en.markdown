@@ -63,7 +63,7 @@ library(kableExtra) # Table Styling
 <br>
 <br>
 
-Arbeiderpartiet got the most seats: **48**
+3) Arbeiderpartiet got the most seats: **48**
 
 
 ```r
@@ -186,9 +186,10 @@ Valg %>%  kbl() %>%  kable_styling()
   </tr>
 </tbody>
 </table>
+<br>
+<br>
 
-
-3) Take data and transform for ggparliament
+4) Take data and transform for ggparliament
 
 
 ```r
@@ -200,7 +201,7 @@ No_Valg <- parliament_data(election_data = Valg,
 <br>
 <br>
 
-4) Plotting the data.
+5) Plotting the data.
 
 
 ```r

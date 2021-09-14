@@ -62,14 +62,15 @@ Valg <- read_excel("D:/NHH SEMESTER/SPRING 2020/DS Practice/RMarkdown/Projects/S
 <br>
 <br>
 
-Arbeiderpartiet got the most seats: **48**
+3) Arbeiderpartiet got the most seats: **48**
 
 ```{r}
 Valg %>%  kbl() %>%  kable_styling()
 ```
+<br>
+<br>
 
-
-3) Take data and transform for ggparliament
+4) Take data and transform for ggparliament
 
 ```{r}
 No_Valg <- parliament_data(election_data = Valg,
@@ -80,7 +81,7 @@ No_Valg <- parliament_data(election_data = Valg,
 <br>
 <br>
 
-4) Plotting the data.
+5) Plotting the data.
 
 ```{r fig.width=20,fig.height=10, dpi=300}
 
