@@ -42,6 +42,7 @@ library(ggplot2) # for plotting
 library(ggparliament) # for parliament plot
 library(dplyr) # for pipes
 library(DT) # DT Tables
+library(kableExtra) # Table Styling
 ```
 <br>
 <br>
@@ -64,7 +65,7 @@ Valg <- read_excel("D:/NHH SEMESTER/SPRING 2020/DS Practice/RMarkdown/Projects/S
 Arbeiderpartiet got the most seats: **48**
 
 ```{r}
-head(Valg)
+Valg %>%  kbl() %>%  kable_styling()
 ```
 
 

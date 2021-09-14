@@ -21,6 +21,8 @@ image:
   preview_only: no
 projects: [R Markdown]
 ---
+<script src="{{< blogdown/postref >}}index.en_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index.en_files/lightable/lightable.css" rel="stylesheet" />
 
 ***
 
@@ -43,6 +45,7 @@ library(ggplot2) # for plotting
 library(ggparliament) # for parliament plot
 library(dplyr) # for pipes
 library(DT) # DT Tables
+library(kableExtra) # Table Styling
 ```
 <br>
 <br>
@@ -64,20 +67,125 @@ Arbeiderpartiet got the most seats: **48**
 
 
 ```r
-head(Valg)
+Valg %>%  kbl() %>%  kable_styling()
 ```
 
-```
-## # A tibble: 6 x 8
-##    year country house    party_long          party_short seats government colour
-##   <dbl> <chr>   <chr>    <chr>               <chr>       <dbl>      <dbl> <chr> 
-## 1  2021 Norway  Storting Arbeiderpartiet     AP             48          0 #df1a~
-## 2  2021 Norway  Storting Hoyre               H              36          0 #87ac~
-## 3  2021 Norway  Storting Senterpartiet       Sp             28          0 #2171~
-## 4  2021 Norway  Storting Fremskrittspartiet  Frp            21          0 #0051~
-## 5  2021 Norway  Storting Sosialistisk Venst~ SV             13          0 #a518~
-## 6  2021 Norway  Storting Rodt                R               8          0 #e734~
-```
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> year </th>
+   <th style="text-align:left;"> country </th>
+   <th style="text-align:left;"> house </th>
+   <th style="text-align:left;"> party_long </th>
+   <th style="text-align:left;"> party_short </th>
+   <th style="text-align:right;"> seats </th>
+   <th style="text-align:right;"> government </th>
+   <th style="text-align:left;"> colour </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Arbeiderpartiet </td>
+   <td style="text-align:left;"> AP </td>
+   <td style="text-align:right;"> 48 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #df1a21 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Hoyre </td>
+   <td style="text-align:left;"> H </td>
+   <td style="text-align:right;"> 36 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #87acd7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Senterpartiet </td>
+   <td style="text-align:left;"> Sp </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #217121 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Fremskrittspartiet </td>
+   <td style="text-align:left;"> Frp </td>
+   <td style="text-align:right;"> 21 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #005194 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Sosialistisk Venstreparti </td>
+   <td style="text-align:left;"> SV </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #a51818 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Rodt </td>
+   <td style="text-align:left;"> R </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #e73446 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Venstre </td>
+   <td style="text-align:left;"> V </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #53be29 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Kristeliq Folkeparti </td>
+   <td style="text-align:left;"> KrF </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #ffaf10 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Miljopartiet De Gronne </td>
+   <td style="text-align:left;"> MdG </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #67962e </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:left;"> Norway </td>
+   <td style="text-align:left;"> Storting </td>
+   <td style="text-align:left;"> Pasientfokus </td>
+   <td style="text-align:left;"> Other </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> #2d3326 </td>
+  </tr>
+</tbody>
+</table>
 
 
 3) Take data and transform for ggparliament
