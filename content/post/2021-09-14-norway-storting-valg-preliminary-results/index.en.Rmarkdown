@@ -5,6 +5,7 @@ date: '2021-09-14'
 slug: norway-storting-valg-preliminary-results
 categories:
   - R
+  - R Markdown
 tags:
   - R Markdown
   - GGparliament
