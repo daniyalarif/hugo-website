@@ -29,9 +29,10 @@ projects: []
 #### Analysis Date: 14 Sept,2021
 
 ***
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 Loading Libraries
 
@@ -42,9 +43,10 @@ library(ggplot2) # for plotting
 library(ggparliament) # for parliament plot
 library(dplyr) # for pipes
 ```
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 Read excel file:
 
@@ -54,9 +56,10 @@ read_excel("...")
 Valg <- read_excel("D:/NHH SEMESTER/SPRING 2020/DS Practice/RMarkdown/Projects/Storting Valg/StortingValg_130921.xlsx")
 
 ```
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 Take data and transform for ggparliament
 
@@ -66,9 +69,10 @@ No_Valg <- parliament_data(election_data = Valg,
                     parl_rows = 4,
                     party_seats = Valg$seats)
 ```
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 Plotting the data.
 
