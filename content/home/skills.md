@@ -36,6 +36,10 @@ feature:
   icon: rocket
   icon_pack: fas
   name: Webapps  
+- description:   
+  icon: github
+  icon_pack: fab
+  name: Github    
 
 # Uncomment to use emoji icons.
 #- icon: ':smile:'
