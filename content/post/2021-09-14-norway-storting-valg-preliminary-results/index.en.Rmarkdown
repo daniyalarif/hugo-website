@@ -33,7 +33,7 @@ projects: []
 <br>
 
 
-Loading Libraries
+1) Loading Libraries
 
 ```{r message=FALSE}
 library(readxl) # for reading excel file
@@ -45,9 +45,9 @@ library(dplyr) # for pipes
 <br>
 <br>
 
-Read excel file:
+2) Read excel file:
 
-read_excel("...")
+  read_excel("...")
 
 ```{r include=FALSE}
 Valg <- read_excel("D:/NHH SEMESTER/SPRING 2020/DS Practice/RMarkdown/Projects/Storting Valg/StortingValg_130921.xlsx")
@@ -56,7 +56,7 @@ Valg <- read_excel("D:/NHH SEMESTER/SPRING 2020/DS Practice/RMarkdown/Projects/S
 <br>
 <br>
 
-Take data and transform for ggparliament
+3) Take data and transform for ggparliament
 
 ```{r}
 No_Valg <- parliament_data(election_data = Valg,
@@ -67,7 +67,7 @@ No_Valg <- parliament_data(election_data = Valg,
 <br>
 <br>
 
-Plotting the data.
+4) Plotting the data.
 
 ```{r fig.width=20,fig.height=10, dpi=300}
 
