@@ -29,6 +29,9 @@ projects: []
 
 ***
 
+
+
+
 Loading Libraries
 
 
@@ -41,9 +44,12 @@ library(dplyr) # for pipes
 ```
 
 
+
+
 Read excel file:
 
 read_excel("...")
+
 
 
 
@@ -58,6 +64,7 @@ No_Valg <- parliament_data(election_data = Valg,
                     parl_rows = 4,
                     party_seats = Valg$seats)
 ```
+
 
 
 
@@ -79,7 +86,7 @@ ggplot(No_Valg, aes(x, y, colour = party_long)) +
                         limits = No_Valg$party_long)
 ```
 
-<img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-4-1.png" width="1344" />
+<img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-4-1.png" width="6000" />
 
 The files and links can be found on github Repo:
 

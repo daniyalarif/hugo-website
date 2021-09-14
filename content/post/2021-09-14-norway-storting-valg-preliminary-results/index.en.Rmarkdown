@@ -29,6 +29,9 @@ projects: []
 
 ***
 
+
+
+
 Loading Libraries
 
 ```{r message=FALSE}
@@ -40,6 +43,8 @@ library(dplyr) # for pipes
 ```
 
 
+
+
 Read excel file:
 
 read_excel("...")
@@ -48,6 +53,7 @@ read_excel("...")
 Valg <- read_excel("D:/NHH SEMESTER/SPRING 2020/DS Practice/RMarkdown/Projects/Storting Valg/StortingValg_130921.xlsx")
 
 ```
+
 
 
 
@@ -62,9 +68,10 @@ No_Valg <- parliament_data(election_data = Valg,
 
 
 
+
 Plotting the data.
 
-```{r fig.width=14,fig.height=10}
+```{r fig.width=20,fig.height=10, dpi=300}
 
 ggplot(No_Valg, aes(x, y, colour = party_long)) +
     geom_parliament_seats() + 
