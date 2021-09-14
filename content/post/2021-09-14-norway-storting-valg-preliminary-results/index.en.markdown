@@ -45,14 +45,14 @@ library(dplyr) # for pipes
 ```
 <br>
 <br>
-<br>
-
 
 Read excel file:
 
 read_excel("...")
 
 
+<br>
+<br>
 
 Take data and transform for ggparliament
 
@@ -63,7 +63,8 @@ No_Valg <- parliament_data(election_data = Valg,
                     parl_rows = 4,
                     party_seats = Valg$seats)
 ```
-
+<br>
+<br>
 
 Plotting the data.
 
@@ -84,6 +85,8 @@ ggplot(No_Valg, aes(x, y, colour = party_long)) +
 ```
 
 <img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-4-1.png" width="6000" />
+<br>
+<br>
 
 The files and links can be found on github Repo:
 
