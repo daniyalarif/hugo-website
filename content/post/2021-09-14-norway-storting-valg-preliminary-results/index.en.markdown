@@ -82,3 +82,6 @@ ggplot(No_Valg, aes(x, y, colour = party_long)) +
 
 <img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-4-1.png" width="1344" />
 
+The files and links can be found on github Repo:
+
+https://github.com/daniyalarif/Reporting_Analytics/tree/main/StortingValg
