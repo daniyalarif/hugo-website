@@ -1,5 +1,5 @@
 ---
-title: Norway Storting Valg (Preliminary Results)
+title: Norway Storting Valg
 author: Daniyal
 date: '2021-09-14'
 slug: norway-storting-valg-preliminary-results
@@ -9,8 +9,8 @@ tags:
   - R Markdown
   - GGparliament
   - GGplot
-subtitle: ''
-summary: ''
+subtitle: 'Preliminary Results'
+summary: 'Norway Storting Valg (Preliminary Results)'
 authors: []
 lastmod: '2021-09-14T12:00:34+02:00'
 featured: no
