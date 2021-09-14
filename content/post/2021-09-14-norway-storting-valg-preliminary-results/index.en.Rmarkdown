@@ -64,7 +64,7 @@ Valg <- read_excel("D:/NHH SEMESTER/SPRING 2020/DS Practice/RMarkdown/Projects/S
 Arbeiderpartiet got the most seats: **48**
 
 ```{r}
-datatable(Valg)
+head(Valg)
 ```
 
 
