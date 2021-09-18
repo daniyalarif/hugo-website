@@ -41,7 +41,7 @@ library(dplyr)
 
 <br>
 
-Function \[*add_readable_time()*\]{.ul} lets add current date and time in the email. Let's save that in a variable.
+Function *add_readable_time()* lets add current date and time in the email. Let's save that in a variable.
 
 
 ```r
@@ -63,7 +63,7 @@ img_string <- add_image(file = img_file_path)
 
 <br>
 
-Function \[*compose_email()*\]{.ul} lets us formulate a full html email to be sent. There are three parts of the entire email.
+Function *compose_email()* lets us formulate a full html email to be sent. There are three parts of the entire email.
 
 1.  Header: For the top portion of email
 2.  Body: Main message to communicate in the email
@@ -112,7 +112,7 @@ Insert email password here:
 
 <br>
 
-Create SMTP credentials through the function \[*create_smtp_creds_file()*\]{.ul} for Rstudio to connect with your email. Replace your email in the user field and email service in the provider.
+Create SMTP credentials through the function *create_smtp_creds_file()* for Rstudio to connect with your email. Replace your email in the user field and email service in the provider.
 
 
 ```r
@@ -132,7 +132,7 @@ create_smtp_creds_file( file = "gmail_creds",
 
 <br>
 
-Finally, sending the email. Pipe the email into \[*smtp_send().*\]{.ul}
+Finally, sending the email. Pipe the email into *smtp_send()*
 
 creds_file is the same as created above.
 
@@ -150,3 +150,7 @@ email %>%
 ```
 ## The email message was sent successfully.
 ```
+
+<br>
+
+![](images/Received.png)
